@@ -38,7 +38,7 @@ public class CaesarCipher{
                     msg[k] = code_upper[j];
                 }     
 
-                if (Character.isLowerCase(msg[k])){   //Character.isLowerCase is a predefined function in java
+                if (Character.isLowerCase(msg[k])){ 
                     int j = msg[k] - 'a';
                     msg[k] = code_lower[j];
                 } 
