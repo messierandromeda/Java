@@ -1,5 +1,4 @@
 /* A program that makes change and returns the fewest number of bills and coins as possible
- * Returns the number of each kind of bill and coin to give back as the difference between charged and given
  * Coins: 1, 2, 5, 10, 20, 50 cents, 1, 2 Euros
  * Bills: 5, 10, 20, 50 Euros
 */
