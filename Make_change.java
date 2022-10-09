@@ -15,6 +15,10 @@ public class make_change{
         if (charged > given){
             throw new IllegalArgumentException("The given amount of money has to be greater or equal to the money charged.");
         }
+          
+        if (charged <= 0 || given <= 0){
+            throw new IllegalArgumentException("The given number has to be greater than zero.");
+        }  
         
         double change = given - charged;
         double change_ = (double) Math.round(change * 100) / 100;
@@ -45,6 +49,11 @@ public class make_change{
     }
 
     public static void main(String[] args){
-        make_change(56,1000);
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the price: ");
+        double charged = scan.nextDouble();
+        System.out.print("Enter the given amount of money: ");
+        double given = scan.nextDouble();
+        make_change(charged, given);
     }
 }
